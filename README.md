@@ -1,90 +1,70 @@
-<p align="center">
-Unleash the Bliss Within
-</p>
+# Getting Started with Create React App
 
-![HOB](https://zupimages.net/up/24/06/1e99.png)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-<p align="center">
-:star:Welcome to the :
-</p>
+## Available Scripts
 
+In the project directory, you can run:
 
-# House Of Bliss
+### `npm start`
 
-Here is your serene destination for high-quality aromatherapy products and holistic wellness.  
-My e-commerce platform is specially designed to provide an immersive and soothing experience.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-### 📋 Table Of Content
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-1. 🔨 [Installation](#installation)
-2. 🚀 [Setting Up](#setting-up)
-3. 🛠️ [Configuration](#configuration)
-4. 💽 [Database](#database)
-5. 🔒 [Payments and Security](#payments-and-security)
-6. 📊 [Usage](#usage)
-7. 🏃 [Running the Application](#running-the-application)
-8. ©️ [License](#license)
+### `npm test`
 
-### 🔨 Installation
-Setting up the House of Bliss e-commerce platform.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
+### `npm run build`
 
-```Requirements
-Before installing, ensure you have the following requirements met:
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Node.js 12.x or higher  
-Python 3.8 or higher  
-Pip for Python dependencies  
-Setting Up  
-To set up the platform, clone this repository to your local machine:
-```
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-```bash
-Copy code  
-git clone https://github.com/Holbiwan/house-of-bliss.git  
-cd house-of-bliss  
-Install the required Node.js and Python dependencies
-```
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-```bash
-Copy code  
-npm install  
-pip install -r requirements.txt  
-Configuration  
-Database  
-Configure database settings by editing the config/database.json file with the appropriate credentials.
-```
+### `npm run eject`
 
-### 🚀 Setting Up
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-### 🛠️ Configuration
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-### 💽 Database
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-### 🔒 Payments and Security
-Stripe API
-Set up payment gateway by configuring the config/payments.json file.  
-Ensure all transactions are secured with HTTPS in production.
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-### 📊 Usage
+## Learn More
 
-### 🏃 Running the Application
-  
-Start the development server with:
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-```bash
-Copy code  
-npm start  
-For the Django backend  
-```
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-```bash
-Copy code  
-python manage.py runserver  
-Adding Products  
-To add products to your e-commerce site, navigate to the admin panel at /admin and use the intuitive interface to manage your inventory
-```
+### Code Splitting
 
-©️ [License](#license)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-Author  : **Sabrina PAPEAU** - [Github](https://github.com/Holbiwan)
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
