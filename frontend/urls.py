@@ -1,4 +1,4 @@
-"""houseofbliss URL Configuration
+"""React app URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.0/topics/http/urls/
@@ -13,21 +13,27 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from django.http import HttpResponse
 from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from django.http import HttpResponse
+
+
+def home_view(request):
+    return HttpResponse("Welcome to the House of Bliss!")
+
 
 urlpatterns = [
+    path('', home_view, name='home'),
     path('admin/', admin.site.urls),
-    path('rest-auth/', include('rest_auth.urls')),
-    path('rest-auth/registration/', include('rest_auth.registration.urls')),
+    path('dj-rest-auth/', include('dj_rest_auth.urls')),
+    path('dj-rest-auth/registration/', include('dj_rest_auth.registration.urls')),
     path('api/', include('core.api.urls'))   
 ]
 
 if settings.DEBUG:
-    # import debug_toolbar
-    # urlpatterns += [path('__debug__/', include(debug_toolbar.urls))]
     urlpatterns += static(settings.MEDIA_URL,
                           document_root=settings.MEDIA_ROOT)
     urlpatterns += static(settings.STATIC_URL,

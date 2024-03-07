@@ -24,8 +24,8 @@ ADDRESS_CHOICES = (
 
 class Item(models.Model):
     title = models.CharField(max_length=100)
-    category = models.CharField(choices=CATEGORY_CHOICES, max_length=2)
-    label = models.CharField(choices=LABEL_CHOICES, max_length=1)
+    category = models.CharField(choices=CATEGORY_CHOICES, max_length=20)
+    label = models.CharField(choices=LABEL_CHOICES, max_length=20)
     slug = models.SlugField()
     price = models.FloatField()
     description = models.TextField(blank=True, null=True)
@@ -105,7 +105,7 @@ class Order(models.Model):
 
 
 class Coupon(models.Model):
-    code = models.CharField(max_length=15)
+    code = models.CharField(max_length=20)
     amount = models.FloatField()
 
     def __str__(self):

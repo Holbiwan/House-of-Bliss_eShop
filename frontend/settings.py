@@ -1,4 +1,6 @@
 import os
+from dotenv import load_dotenv
+load_dotenv()
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -8,12 +10,18 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = ''
+SECRET_KEY = os.getenv('DJANGO_SECRET_KEY')
+
+if not SECRET_KEY:
+    raise ValueError("The DJANGO_SECRET_KEY environment variable is not set")
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1']
+
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 # Application definition
@@ -26,18 +34,15 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sites',
-
+    
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-    'rest_auth',
-    'rest_auth.registration',
     'rest_framework',
     'rest_framework.authtoken',
     'corsheaders',
-    
-    'core'
-
+    'dj_rest_auth',
+    'core',
 ]
 
 
@@ -49,12 +54,12 @@ MIDDLEWARE = [
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware'
-    'allauth.account.middleware.AuthenticationMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'allauth.account.middleware.AccountMiddleware',
     
 ]
 
-ROOT_URLCONF = 'houseofbliss.urls'
+ROOT_URLCONF = 'frontend.urls'
 
 TEMPLATES = [
     {
@@ -73,7 +78,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'houseofbliss.wsgi.application'
+WSGI_APPLICATION = 'frontend.wsgi.application'
 
 
 # Database

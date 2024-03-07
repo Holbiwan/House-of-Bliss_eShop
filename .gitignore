@@ -27,6 +27,13 @@ Thumbs.db
 /.yarn
 /yarn-error.log
 /.pnp
+/node_modules
+/.env
+/.env.local
+/.env.development.local
+/.env.test.local
+/.env.production.local
+/.pnp
 .pnp.js
 
 # Local environment files
@@ -35,6 +42,7 @@ Thumbs.db
 .env.test.local
 .env.production.local
 .env.*.local
+hob_env/
 
 # Package manager files
 npm-debug.log*
@@ -47,4 +55,15 @@ node_modules/
 .env
 backend/env
 
-env/
+# testing
+/coverage
+
+# production
+/build
+
+static_in_env/
+--pycache__/
+*.pyc
+House-Of-Bliss_eStore.zip
+
+
