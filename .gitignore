@@ -65,5 +65,6 @@ static_in_env/
 --pycache__/
 *.pyc
 House-Of-Bliss_eStore.zip
+package-lock.json
 
 
