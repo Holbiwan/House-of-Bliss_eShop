@@ -21,7 +21,6 @@ and soothing experience, empowering you to unleash the bliss within.
 6. 🏃 Running the Application
 7. ©️ License
    
-
 ## 🔨1. Installation - Setting Up
 
 Before diving into the blissful experience of House of Bliss, ensure you meet the following requirements:
