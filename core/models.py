@@ -9,6 +9,7 @@ CATEGORY_CHOICES = (
         ('essential_oil', 'Essential Oil'),
         ('diffuser', 'Diffuser'),
         ('roll_on', 'Roll On'),
+        ('candles', 'Candles'),
 )
 
 LABEL_CHOICES = (
