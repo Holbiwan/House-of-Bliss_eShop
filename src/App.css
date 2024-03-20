@@ -28,6 +28,17 @@
   color: #61dafb;
 }
 
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  } 
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +46,37 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.button {
+  background-color: #4CAF50;
+  color: white; /* text color */
+  padding: 14px 20px; /* Padding into button */
+  margin: 8px 0; /* Margin around button */
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+.button {
+  background-color: #4CAF50;
+  color: white; /* text color */
+  padding: 14px 20px; /* Padding into button */
+  margin: 8px 0; /* Margin around button */
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button {
+  background-color: #4CAF50; /* Button color*/
+  color: white; /* Texte button color */
+  padding: 14px 20px; /* Padding into button */
+  margin: 8px 0; /* Margin around button */
+  border: none; /* No border */
+  cursor: pointer; 
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #45a049; 
 }
