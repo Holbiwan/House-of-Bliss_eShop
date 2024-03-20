@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sites',
+    'django_countries',
     
     'allauth',
     'allauth.account',
@@ -149,6 +150,9 @@ CORS_ORIGIN_WHITELIST = (
     'http://localhost:3000',
 )
 
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",
+]
 
 # permission classes
 REST_FRAMEWORK = {
@@ -163,7 +167,6 @@ REST_FRAMEWORK = {
 ACCOUNT_EMAIL_REQUIRED = False
 ACCOUNT_AUTHENTICATION_METHOD = 'username'
 ACCOUNT_EMAIL_VERIFICATION = 'none'
-
 
 STRIPE_PUBLIC_KEY = ''
 STRIPE_SECRET_KEY = ''
