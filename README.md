@@ -76,7 +76,6 @@ npm start
 ```For the Django backend:
 python3 manage.py runserver
 ```
-
 Adding Products:
 
 To add products to your e-commerce site, navigate to the admin panel at `/admin` and use the intuitive interface to manage your inventory.
