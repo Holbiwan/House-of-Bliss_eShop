@@ -1,69 +1,30 @@
-# OS-generated files
-Thumbs.db
-.DS_Store
-
-# Editor-specific files
-.vscode/
-*.sublime-project
-*.sublime-workspace
-*.idea/
-
-# Build artifacts
-*.log
-*.zip
-*.rar
-*.tar.gz
-*.tar.bz2
-*.tar.xz
-*.gz
-*.bz2
-*.7z
-*.exe
-*.dll
-*.so
-*.dylib
-
-# Dependencies directories
-/.yarn
-/yarn-error.log
-/.pnp
-/node_modules
-/.env
-/.env.local
-/.env.development.local
-/.env.test.local
-/.env.production.local
-/.pnp
-.pnp.js
-
-# Local environment files
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-.env.*.local
-hob_env/
-
-# Package manager files
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Miscellaneous
-node_modules/
-.pnp.js
-.env
-backend/env
-
-# testing
-/coverage
-
-# production
-/build
-
-static_in_env/
---pycache__/
+react-frontend/.gitignore
+# Fichiers de configuration système
 *.pyc
-House-Of-Bliss_eStore.zip
-package-lock.json/
-package-lock.json
+*.pyo
+*.pyd
+__pycache__/
+
+Zone.Identifier
+__Pycache__
+__Pycache__
+
+
+# Fichiers de sauvegarde et fichiers temporaires
+*.bak
+*.swp
+*~
+
+# Environnements virtuels
+venv/
+
+.env
+.flake8
+HOB_env
+__pycache__
+_init__.py
+
+
+node_modules
+zone.identifier
+
