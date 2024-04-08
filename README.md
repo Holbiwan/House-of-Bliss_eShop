@@ -38,8 +38,6 @@ git clone https://github.com/Holbiwan/House-of-Bliss_eShop.git
 cd House-Of-Bliss_eShop
 ```
 
-<img width="427" alt="image" src="https://github.com/Holbiwan/House-of-Bliss_eShop/assets/135612979/823e1e6c-456b-45cc-bf95-133bfa8e16fd">
-
 
 ```
 npm install
@@ -64,7 +62,9 @@ For secure transactions, we integrate with PayPal. Set up the payment gateway by
 
 This section provides an overview of the tools for using the House Of Bliss e-commerce platform.
 
-<img width="566" alt="image" src="https://github.com/Holbiwan/House-of-Bliss_eShop/assets/135612979/a3ae9363-1a52-4b24-9f85-2fd869286d47">
+<div align="center">
+    <img src="https://skillicons.dev/icons?i=python,html,css,js,react,nodejs,django,sqlite,bootstrap" /><br>
+</div>
 
 
 ## 🏃 6. Running the Application
