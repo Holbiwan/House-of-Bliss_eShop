@@ -7,6 +7,8 @@
   </p>
 </p>
 
+### Link to my landing page : https://holbiwan.github.io/Holbiwan-HOB.github.io/
+
 Here is your serene destination for high-quality aromatherapy products  
 and holistic wellness. this e-commerce platform is specially designed to provide an immersive  
 and soothing experience, empowering you to unleash the bliss within.
